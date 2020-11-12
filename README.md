@@ -39,10 +39,9 @@ This │is some text, and (this is some text inside quotes)
 ```
 
 Doing `di(` does nothing, unfortunately.
-
 This plugins tackles that problem.
 
-Works with round (`()`), square (`[]`) and angle (`<>`) brackets
+Works with round (`()`), square (`[]`), curly (`{}`), and angle (`<>`) brackets.
 
 Oh, and `ci(` will work as well!
 
@@ -90,7 +89,7 @@ te│xt(text inside(innermost text))
 It will result in:
 
 ```
-te│xt(text inside())
+text(text inside(│))
 ```
 
 Which effectively means that this plugin will first delete the innermost body inside brackets.
